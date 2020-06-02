@@ -28,7 +28,7 @@
 
 #if TUSB_OPT_DEVICE_ENABLED && (CFG_TUSB_MCU == OPT_MCU_SAMD51 || CFG_TUSB_MCU == OPT_MCU_SAMD21)
 
-#include "sam.h"
+#include "samd21.h"
 #include "device/dcd.h"
 
 /*------------------------------------------------------------------*/
