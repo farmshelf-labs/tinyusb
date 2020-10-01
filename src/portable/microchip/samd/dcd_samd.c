@@ -24,6 +24,9 @@
  * This file is part of the TinyUSB stack.
  */
 
+#pragma GCC push_options
+#pragma GCC optimize ("O0")
+
 #include "tusb_option.h"
 
 #if TUSB_OPT_DEVICE_ENABLED && (CFG_TUSB_MCU == OPT_MCU_SAMD51 || CFG_TUSB_MCU == OPT_MCU_SAMD21)
@@ -389,3 +392,5 @@ void dcd_int_handler (uint8_t rhport)
 }
 
 #endif
+
+#pragma GCC pop_options
